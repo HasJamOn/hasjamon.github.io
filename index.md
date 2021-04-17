@@ -21,7 +21,7 @@
                     <ul>
                         <li>Has Jam On</li>
                         <li>Hobbyist</li>
-                        <li>Doesn't drink coffee.</li>
+                        <li>Likes Jam</li>
                     </ul>
                 </div>
             </div>
