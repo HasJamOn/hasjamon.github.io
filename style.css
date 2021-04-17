@@ -1,7 +1,8 @@
 
-
-
-* { margin:0; padding: 0;}
+* { margin:0; padding: 0; font-family: 'Press Start 2P', cursive;}
+p {font-family: verdana; margin-top: 0.5em;}
+b {font-size:0.75em;}
+a {font-size:0.7em;}
 
 #container{margin: 0 20%;display: flex;flex-flow: column nowrap;justify-content: center;}
     #header{background: rgba(0,0,0,.25);display: flex;flex-flow: row nowrap; border-bottom-style: solid;border-color:rgba(0,0,0, 0.25);}
