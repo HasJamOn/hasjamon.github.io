@@ -1,0 +1,224 @@
+{
+	"thankyou": {
+		"name": "TAPEを使用することを選択していただきありがとうございます",
+		"items": [
+			{
+
+				"name": "▲ 何かを始める",
+				"state": "priority"
+			}
+		],
+		"vis": "true",
+		"pin": "true",
+		"guide": "true"
+	},
+	"also": {
+		"name": "さらに...",
+		"items": [
+			{
+				"name": "ウィンドウを展開して、より多くの列を許可します",
+				"state": "approved"
+			},
+			{
+				"name": "フォルダにドロップして、その中の何からでもアイテムを作成できます",
+				"state": ""
+			},
+			{
+				"name": "csv形式の.textファイルをドロップして、値からアイテムを作成できます",
+				"state": ""
+			},
+			{
+				"name": "保存は自動的に行われます",
+				"state": "done"
+			}
+		],
+		"vis": "false",
+		"pin": "false"
+	},
+	"themes": {
+		"name": "テーマ",
+		"items": [
+			{
+				"name": "svgテーマをドラッグアンドドロップしてロードします",
+				"state": "priority"
+			},
+			{
+				"name": "CMD/CTRL+SHIFT+T — デフォルトのテーマに戻します",
+				"state": ""
+			},
+			{
+				"name": "テーマはシンプルなsvgファイルで、カスタマイズも簡単です",
+				"state": "approved"
+			}
+		],
+		"vis": "false",
+		"pin": "false"
+	},
+	"shortcuts": {
+		"name": "キーボードショートカット",
+		"items": [
+			{
+				"name": "ENTER — 新しいコレクションを作成",
+				"state": ""
+			},
+			{
+				"name": "TAB — レイアウトモードを変更",
+				"state": ""
+			},
+			{
+				"name": "CMD/CTRL+F — アイテムの検索",
+				"state": ""
+			},
+			{
+				"name": "CMD/CTRL+G — コレクションへジャンプ",
+				"state": ""
+			},
+			{
+				"name": "CMD/CTRL+O — 常に前面表示の切り替え",
+				"state": ""
+			},
+			{
+				"name": "CMD/CTRL+S — TAPEのデータをエクスポート",
+				"state": ""
+			},
+			{
+				"name": "CMD/CTRL+P — 現在のコレクションのプライバシーのぼかしを切り替えます",
+				"state": ""
+			},
+			{
+				"name": "CMD/CTRL+SHIFT+P — すべてのコレクションでプライバシーのぼかしを切り替えます",
+				"state": ""
+			},
+			{
+				"name": "CMD/CTRL+UP or DOWN すべてのコレクションを展開または折りたたむ",
+				"state": ""
+			},
+			{
+				"name": "CMD + - — 文字サイズを変更します。CMD 0でリセット",
+				"state": ""
+			}
+		],
+		"vis": "false",
+		"pin": "false"
+	},
+	"graphs": {
+		"name": "グラフ",
+		"items": [
+			{
+				"name": "グラフは、コレクション内のアイテムの進行状況を示します",
+				"state": ""
+			},
+			{
+				"name": "▲ グラフにカーソルを合わせると、詳細が表示されます。",
+				"state": ""
+			},
+			{
+				"name": "グループセグメントをクリックして、状態でフィルタリングします",
+				"state": "priority"
+			},
+			{
+				"name": "グラフを右クリックしてピンで開きます",
+				"state": "priority"
+			}
+		],
+		"vis": "true",
+		"pin": "false"
+	},
+	"move": {
+		"name": "◄ これの左端をクリックして、上に移動します",
+		"items": [],
+		"vis": "true",
+		"pin": "false"
+	},
+	"advanced": {
+		"name": "高度なワークフロー",
+		"items": [
+			{
+				"name": "コレクションのタイトルの近くをクリックすると、アイテムを非表示にできます",
+				"state": ""
+			},
+			{
+				"name": "アイテムをドラッグアンドドロップして、コレクション内またはコレクション間で再配置します",
+				"state": "approved"
+			},
+			{
+				"name": "カーソルを合わせて0〜5を押し、アイテムの状態を変更します",
+				"state": "priority"
+			}
+		],
+		"vis": "true",
+		"pin": "false"
+	},
+	"edit": {
+		"name": "このタイトルをダブルクリックして、コレクション名を編集します",
+		"items": [
+			{
+				"name": "テキストを削除すると、コレクションまたはアイテムを削除できます",
+				"state": ""
+			}
+		],
+		"vis": "true",
+		"pin": "false"
+	},
+	"basic": {
+		"name": "基本的なワークフロー",
+		"items": [
+			{
+				"name": "編集するアイテムのテキストをダブルクリックします。 ENTERで確定",
+				"state": ""
+			},
+			{
+				"name": "アイテムの右側をクリックして、状態を変更します。 右クリックして、[DONE]と[PROPROTY]を切り替えます",
+				"state": ""
+			},
+			{
+				"name": "▼ この下の溝をクリックして、新しいアイテムを追加します",
+				"state": ""
+			}
+		],
+		"vis": "true",
+		"pin": "false"
+	},
+	"collection": {
+		"name": "これはコレクションです",
+		"items": [
+			{
+				"name": "これは ITEM （アイテム）です",
+				"state": ""
+			},
+			{
+				"name": "これは PRIORITY （優先）です",
+				"state": "priority"
+			},
+			{
+				"name": "これは WORKING （作業中）です",
+				"state": "working"
+			},
+			{
+				"name": "これは SUBMITTED （提出済み）です",
+				"state": "submitted"
+			},
+			{
+				"name": "これは APPROVED （承認済み）です",
+				"state": "approved"
+			},
+			{
+				"name": "これは DONE（完了） です",
+				"state": "done"
+			}
+		],
+		"vis": "true",
+		"pin": "false"
+	},
+	"project": {
+		"name": "これはあなたのプロジェクトです",
+		"items": [
+			{
+				"name": "これはあなたの仕事、またはタスクです",
+				"state": ""
+			}
+		],
+		"vis": "true",
+		"pin": "false"
+	}
+}

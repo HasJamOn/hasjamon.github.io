@@ -1,0 +1,9 @@
+#parent { 
+    background:lightblue; 
+    display: flex; 
+    flex-flow: row nowrap;
+}
+.childitem {flex-basis: 300px;}
+.child1 {background:cornflowerblue;}
+.child2 {background:deepskyblue;}
+.child3 {background:dodgerblue;}
