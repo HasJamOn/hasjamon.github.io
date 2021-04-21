@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jam Factory by HasJamOn</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <a href="ref_idlegame.html">reference</a><br />
+        
+<!--devdisplay-->
+        <button id="devbutton" title="Dev mode" type="button">Dev-mode</button>
+        <div id = "devdisplay">
+            <button id="devresetjam" title="0 jam" type="button">Set jam to 0</button>
+            <h1>Jam Factory!<br /> $<span id="jamTxt">0</span></h1>
+            <h2>Businesses:<span id="businesstotalTxt">0</span></h2>
+            <h3>Income rate:<span id="incometotalTxt">0</span></h3>
+        </div>
+<!--gamedisplay-->
+        <div id="idlebox_container">
+            <div id="idlebox_wallet"><div id="idlebox_income"></div></div>
+            
+        </div>
+    </body>
+    <script src="idle_script.ts"></script>
+</html>
