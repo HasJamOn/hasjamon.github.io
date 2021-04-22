@@ -114,4 +114,3 @@ function businessCost(id) {
 }
 setBusiness();
 setInterval(update, 1000 / 15);
-//# sourceMappingURL=idle_script.js.map
