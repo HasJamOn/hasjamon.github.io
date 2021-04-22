@@ -7,22 +7,17 @@ let plunger = document.getElementById('plunger');
 let funnel = document.getElementById('funnel');
 let greenbar = document.getElementById('greenbar');
 let redbar = document.getElementById('redbar');
+var unjamtasksdoneHTML = document.getElementById('unjamtasksdone');
 var isdown = false;
 var greenbarvalue = 1;
-var redbarvalue = 100
+var redbarvalue = 100;
+var unjamtasksdone = 0;
 
 function update(){
     greenbarvalue -= 1;
     greenbar.style.width = greenbarvalue + "px";
     redbar.style.width = redbarvalue - greenbarvalue + "px";
-    if (greenbarvalue >= 100){
-        greenbarvalue = 1;
-        redbarvalue = 99;
-    }
-    else if (greenbarvalue <= 0){
-        greenbarvalue = 1;
-        redbarvalue = 100;
-    }
+    
 }
 
 function unjamjam(i) {
@@ -37,13 +32,23 @@ function unjamjam(i) {
         greenbar.style.width = greenbarvalue + "px";
         redbar.style.width = redbarvalue - greenbarvalue + "px";
         console.log(greenbar.style.width);
+        if (greenbarvalue >= 100){
+            greenbarvalue = 1;
+            redbarvalue = 99;
+            unjamtasksdone += 1;
+            unjamtasksdoneHTML.innerHTML = unjamtasksdone.toString();
+        }
+        else if (greenbarvalue <= 0){
+            greenbarvalue = 1;
+            redbarvalue = 100;
+        }
     }
     else if(isdown == true && x == "KeyW" || isdown == true && x == "ArrowUp"){//position is down and you have to press up
         isdown = false;
         funnel.style.marginTop = "-50px";
         graphiccontainer.style.marginTop ="-10px";
     }
-    console.log(isdown)
+    console.log(unjamtasksdone)
     
   }
 setInterval(update, 1000/15);
