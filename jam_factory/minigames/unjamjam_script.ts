@@ -39,18 +39,24 @@ function unjamjam(i) {
             redbarvalue = 99;
             unjamtasksdone += 1;
             unjamtasksdoneHTML.innerHTML = unjamtasksdone.toString();
+            //go to next task (mini-game)
         }
         else if (greenbarvalue <= 0){
             greenbarvalue = 1;
             redbarvalue = 100;
         }
     }
-    else if(isdown == true && x == "KeyW" || isdown == true && x == "ArrowUp"){//position is down and you have to press up
-        isdown = false;
-        funnel.style.marginTop = "-50px";
-        graphiccontainer.style.marginTop ="-10px";
+    else if(unjamtasksdone == 10 && x == "KeyS" || unjamtasksdone == 10 &&  x == "ArrowDown"){
+        console.log("Easter Egg: Choose *Endless mode* or throw yourself into the jam portal?");
     }
-    console.log(unjamtasksdone)
+    else if(unjamtasksdone == 5 && x == "KeyS" || unjamtasksdone == 5 &&  x == "ArrowDown"){
+        console.log("You fall into the jam portal");
+    }
+    else if(isdown == true && x == "KeyW" || isdown == true && x == "ArrowUp"){//position is down and you have to press up
+            isdown = false;
+            funnel.style.marginTop = "-50px";
+            graphiccontainer.style.marginTop ="-10px";
+    }
     
   }
 setInterval(update, 1000/15);

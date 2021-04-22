@@ -40,6 +40,9 @@
                 redbarvalue = 100;
             }
         }
+        else if (unjamtasksdone == 5 && x == "KeyS" || unjamtasksdone == 5 && x == "ArrowDown") {
+            console.log("you fall into the jam portal");
+        }
         else if (isdown == true && x == "KeyW" || isdown == true && x == "ArrowUp") { //position is down and you have to press up
             isdown = false;
             funnel.style.marginTop = "-50px";
