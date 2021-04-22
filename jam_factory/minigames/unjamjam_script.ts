@@ -8,7 +8,7 @@ let funnel = document.getElementById('funnel');
 let greenbar = document.getElementById('greenbar');
 let redbar = document.getElementById('redbar');
 var isdown = false;
-var greenbarvalue = 0;
+var greenbarvalue = 1;
 var redbarvalue = 100
 
 function update(){
@@ -20,7 +20,7 @@ function update(){
         redbarvalue = 99;
     }
     else if (greenbarvalue <= 0){
-        greenbarvalue = 0;
+        greenbarvalue = 1;
         redbarvalue = 100;
     }
 }
