@@ -1,4 +1,5 @@
-#container{display: flex; flex-flow:column nowrap;}
+#graphiccontainer{display: flex; flex-flow:column nowrap; margin-top:-10px;}
+#barcontainer{display: flex; flex-flow:row nowrap; background-color:yellow; padding:8px; width:100px;}
 #plunger{
     height:128px;
     width:128px;
@@ -6,4 +7,15 @@
 #funnel{
     height:128px;
     width:128px;
+    margin-top:-50px;
+}
+#greenbar{
+    background-color:green;
+    height:20px;
+    width:0px;
+}
+#redbar{
+    background-color:red;
+    height:20px;
+    width:100px;
 }
