@@ -1,3 +1,4 @@
+(function() {
 "use strict";
 //<editor-fold defaultstate="collapsed" desc="devdisplay">
 //<editor-fold defaultstate="collapsed" desc="devdisplay var">
@@ -41,16 +42,16 @@ var businessIncome = new Array(); //indivdual business income for devdisplay
 
 
 //<editor-fold defaultstate="collapsed" desc="idle-engine function">
-// function update() {
-//     for(var i = 0; i < business.length; i++) {
-//         jam += businessAmount[i] * ((i + 1) * (i + 1));
-//         businessIncome[i] = businessAmount[i] * ((i + 1) * (i + 1));
-//         }
+function update() {
+    for(var i = 0; i < business.length; i++) {
+        jam += businessAmount[i] * ((i + 1) * (i + 1));
+        businessIncome[i] = businessAmount[i] * ((i + 1) * (i + 1));
+        }
 
-//     jamTxt.innerHTML = jam.toString();
-//     idlebox_wallet.style.width = jam / vsrrate + 'px';
-//     idlebox_wallet.style.height = jam / vsrrate + 'px';
-// }
+    jamTxt.innerHTML = jam.toString();
+    idlebox_wallet.style.width = jam / vsrrate + 'px';
+    idlebox_wallet.style.height = jam / vsrrate + 'px';
+}
 function setBusiness() {
     for(var i = 0 ; i < business.length; i++) {
         businessAmount.push(0);
@@ -131,8 +132,4 @@ setInterval(update, 1000/15);
 //</editor-fold>
 
 //</editor-fold>
-
-
-
-
-    
+})();

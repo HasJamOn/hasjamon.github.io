@@ -1,3 +1,5 @@
+(function() {
+
 //input 
 //w is 87 uparrow is 38
 //s is 83 downarrow is 40
@@ -53,3 +55,4 @@ function unjamjam(i) {
   }
 setInterval(update, 1000/15);
 document.addEventListener('keydown', unjamjam);
+})();
