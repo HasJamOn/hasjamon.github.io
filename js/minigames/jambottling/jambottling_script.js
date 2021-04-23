@@ -50,6 +50,9 @@ function mouseUp() {
             }
             else if (bottlefillamount < 100) {
                 bottle.src = "../../art_assets/jamfactory_mockup/jamfactory_assets_mockup/jamfactory_assets_mockup_filledbottle5.png";
+                if (leverdown == true) {
+                    dialogbox.textContent = "It's full, you can let go now!";
+                }
             }
             else if (bottlefillamount == 100) {
                 mouseUp();

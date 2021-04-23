@@ -19,7 +19,6 @@ function mouseDown(){
     lever.style.backgroundImage = "url('../../art_assets/jamfactory_mockup/jamfactory_assets_mockup/jamfactory_assets_mockup_lever_1-export2.png')";
     dialogbox.textContent = "Filling a bottle..";
 
-    
 }
 
 function mouseUp(){
@@ -64,6 +63,9 @@ function mouseUp(){
             }
             else if(bottlefillamount < 100){
                 bottle.src = "../../art_assets/jamfactory_mockup/jamfactory_assets_mockup/jamfactory_assets_mockup_filledbottle5.png";
+                if(leverdown == true){
+                    dialogbox.textContent = "It's full, you can let go now!";
+                }
             }
             else if(bottlefillamount == 100){
                 mouseUp()
@@ -71,6 +73,7 @@ function mouseUp(){
                 bottle.src = "../../art_assets/jamfactory_mockup/jamfactory_assets_mockup/jamfactory_assets_mockup_emptybottle.png";
                 dialogbox.textContent = "Oh no! It overflowed, you have to start over.";
             }
+            
         }
     }
 

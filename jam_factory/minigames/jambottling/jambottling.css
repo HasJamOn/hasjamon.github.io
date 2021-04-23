@@ -8,13 +8,15 @@ p{font-size: 1vw ;}
     display:flex; flex-flow:row nowrap;
 }
 #container-column{
-    display:flex; flex-flow:column nowrap;
+    display:flex; flex-flow:column nowrap; margin-top:-1vw;
 }
-#jamfluidflow{display:none;}
+#jamfluidflow{display:none; margin-bottom:-8vw;}
 #lever{
     background-image:url("../../art_assets/jamfactory_mockup/jamfactory_assets_mockup/jamfactory_assets_mockup_lever_1-export1.png");
     background-repeat:no-repeat;
     background-size:contain;
-    width:64px;
-    height:64px;
+}
+.phoneresizer{
+    width:8vw;
+    height:8vw;
 }
