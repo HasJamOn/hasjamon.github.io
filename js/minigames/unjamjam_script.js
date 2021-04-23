@@ -54,7 +54,7 @@
             redbar.style.width = redbarvalue - greenbarvalue + "px";
             if (greenbarvalue >= 100) {
                 bardecreaserate = getRndInteger(1, 2); //randomizes the rate every round
-                greenbarvalue = 3;
+                greenbarvalue = 4;
                 unjamtasksdone += 1;
                 unjamtasksdoneHTML.innerHTML = unjamtasksdone.toString();
                 //go to next task (mini-game)

@@ -1,16 +1,16 @@
 (function() {
 "use strict";
-//<editor-fold defaultstate="collapsed" desc="devdisplay">
-//<editor-fold defaultstate="collapsed" desc="devdisplay var">
+//devdisplay
+//devdisplay var
 let devbutton = document.getElementById('devbutton');
 let devresetjam = document.getElementById('devresetjam');
 let devdisplay = document.getElementById('devdisplay'); devdisplay.style.display = 'none';
 let jamTxt = document.getElementById('jamTxt');
 let businesstotalTxt = document.getElementById('businesstotalTxt');
 let incometotalTxt = document.getElementById('incometotalTxt');
-//</editor-fold>
 
-//<editor-fold defaultstate="collapsed" desc="devdisplay buttons">
+
+//devdisplay buttons
 devbutton.onclick = function() {
     if(document.getElementById('devdisplay') .style.display=='none') 
     {document.getElementById('devdisplay') .style.display=''}
@@ -19,29 +19,25 @@ devbutton.onclick = function() {
 devresetjam.onclick = function() {
     jam = 0;
 };
-//</editor-fold>
 
-//</editor-fold>
-
-//<editor-fold defaultstate="collapsed" desc="gamedisplay">
+//gamedisplay
 let vsrrate = 10; //visual reduction of boxes
 let idlebox_income = document.getElementById('idlebox_income');
 let idlebox_wallet = document.getElementById('idlebox_wallet');
-//</editor-fold>
 
-//<editor-fold defaultstate="collapsed" desc="idle-engine">
-//<editor-fold defaultstate="collapsed" desc="idle-engine var">
+
+//idle-engine
+//idle-engine var
 var jam = 2;
 var businesstotal = 0;
 var incometotal = 0;
 var business = ["Food","god","why","anotherone"];
 var businessAmount = new Array();
 var businessIncome = new Array(); //indivdual business income for devdisplay
-//</editor-fold>
 
 
 
-//<editor-fold defaultstate="collapsed" desc="idle-engine function">
+//idle-engine function
 function update() {
     for(var i = 0; i < business.length; i++) {
         jam += businessAmount[i] * ((i + 1) * (i + 1));
@@ -94,11 +90,11 @@ function buyBusiness() {
         businessIncome[this.id]++;
         document.getElementById("amount" + this.id).innerHTML = businessAmount[this.id];
         document.getElementById("income" + this.id).innerHTML = businessIncome[this.id];
-        //<editor-fold defaultstate="collapsed" desc="gamedisplay stats">
+        //gamedisplay stats
         idlebox_income.style.width = incometotal / vsrrate + 'px';
         idlebox_income.style.height = incometotal / vsrrate + 'px';
-        //</editor-fold>
-        //<editor-fold defaultstate="collapsed" desc="devdisplay stats">
+
+        //devdisplay stats
         businesstotal = businessAmount.reduce(function(a, b){
             return a + b;
         });
@@ -111,7 +107,6 @@ function buyBusiness() {
         businesstotalTxt.innerHTML = businesstotal.toString();;
         incometotalTxt.innerHTML = incometotal.toString();;
         //console.log(businessAmount, businessIncome); // shows the difference between owned business and the income it brings
-        //</editor-fold>
     }
     
     document.getElementById("amount" + this.id).innerHTML = "Amount:" + businessAmount[this.id];
@@ -129,7 +124,4 @@ setBusiness();
 
 
 setInterval(update, 1000/15);
-//</editor-fold>
-
-//</editor-fold>
 })();
