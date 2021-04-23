@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="conveyorcrank.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+
+        <h1>Instructions:</h1>
+        <p>Click and hold the lever next to the funnel to fill the bottle with jam. Let go when it's full, but don't let it overflow!</p>
+        <h2>Controls:</h2>
+        <p><b>FILL</b> - press and hold left mouse button with your mouse on the lever.</p>
+        <p><b>STOP</b> - let go of the left mouse button or move the mouse away from the lever.</p>
+
+        <div id="container">
+            <div>conveyorbelt</div>
+            <div onmousedown="crankDown()" onmouseup="crankUp()" onmousemove="crankMove()" onmouseout="crankUp()" id="crank"></div>
+        </div>
+
+    </body>
+    <script src="../../../js/minigames/conveyorcrank/conveyorcrank_script.js"></script>
+</html>
