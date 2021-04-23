@@ -19,3 +19,8 @@
     height:20px;
     width:100px;
 }
+#jamportalcontainer{
+    width:320px;
+    display:none;
+    flex-flow:column nowrap;
+}
