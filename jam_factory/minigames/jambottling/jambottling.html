@@ -6,20 +6,24 @@
     <body>
 
         <h1>Instructions:</h1>
-        <p>Push the plunger in and out of the funnel.</p>
+        <p>Click and hold the lever next to the funnel to fill the bottle with jam. Let go when it's full, but don't let it overflow!</p>
         <h2>Controls:</h2>
-        <p><b>UP</b> - press W or Up arrow key</p>
-        <p><b>DOWN</b> - press S or Down arrow key</p>
+        <p><b>FILL</b> - press and hold left mouse button with your mouse on the lever.</p>
+        <p><b>STOP</b> - let go of the left mouse button or move the mouse away from the lever.</p>
 
-        <div id="container-row">
-            <div><img src="..\..\art_assets\jamfactory_mockup\jamfactory_assets_mockup\jamfactory_assets_mockup_funnel_1-export.png" alt="funnel"/>funnel</div>
-            <div><img src="..\..\art_assets\jamfactory_mockup\jamfactory_assets_mockup\jamfactory_assets_mockup_lever_1-export1.png" alt="lever"/>lever</div>
+        <div class="container-row">
+            <div><img src="../../art_assets/jamfactory_mockup/jamfactory_assets_mockup/jamfactory_assets_mockup_funnel_1-export.png" alt="funnel"/></div>
+            <div id="lever" onmousedown="mouseDown()" ontouchstart="mouseDown()" onmouseup="mouseUp()" onmouseleave="mouseUp()" ontouchend="mouseUp()" ></div>
         </div>
         <div id="container-column">
-            <div><img src="..\..\art_assets\jamfactory_mockup\jamfactory_assets_mockup\jamfactory_assets_mockup_jamfluidflow1.png" alt="bottle"/>jamfluidflow</div>
-            <div><img src="..\..\art_assets\jamfactory_mockup\jamfactory_assets_mockup\jamfactory_assets_mockup_emptybottle.png" alt="bottle"/>bottle</div>
+            <div><img id="jamfluidflow" src=../../art_assets/jamfactory_mockup/jamfactory_assets_mockup/jamfactory_assets_mockup_jamfluidflow1.png alt="bottle"/></div>
+            <div><img id="bottle" src="../../art_assets/jamfactory_mockup/jamfactory_assets_mockup/jamfactory_assets_mockup_emptybottle.png" alt="bottle"/></div>
         </div>
 
+        <p id="dialogbox">Hello and welcome to your new job at Jam Factory! Please begin filling bottles with jam by pulling the lever.</p>
+        
+        <div class="container-row"><p>filled bottles: </p><div id="bottledjam"></div></div>
+
     </body>
-    <script src="..\..\js\minigames\jambottling\jambottling.js"></script>
+    <script src="../../../js/minigames/jambottling/jambottling_script.js"></script>
 </html>
