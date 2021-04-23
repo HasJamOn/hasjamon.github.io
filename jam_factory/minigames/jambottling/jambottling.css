@@ -1,8 +1,8 @@
 body{
     display:flex; flex-flow:column nowrap;
 }
-h1{font-size: 4vw ;}
-p{font-size: 1vw ;}
+h1,h2{font-size: 2vw ;margin:0.5em}
+p,b{font-size: 1vw ; margin:0.2em}
 
 .container-row{
     display:flex; flex-flow:row nowrap;
