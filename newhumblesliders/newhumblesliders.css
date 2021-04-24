@@ -4,9 +4,26 @@ body{
     font-family:verdana;
     display:flex; flex-flow:column nowrap;
 }
+h1{margin-left:2em;}
 .containerrow{display:flex; flex-flow:row nowrap}
 .slider{
-    opacity: 1;
+    width:30em;
+    margin:1em 2em;
+    appearance:none;
+    background: #a1a9b4  ;
+    height: 20px;
+    opacity: 2;
+    border-radius: 4px;
+   }
+  
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: #364152  ;
+    background-image:url(thumb.png);
+    width: 10%;
+    height: 22px;
 }
 .amount{
     background-color: #879f42;
@@ -14,9 +31,14 @@ body{
     height:2em;
     width:9em;
     text-align:center;
+    color:white;
+    font-weight:bold;
 }
 #center{margin: 0 10em}
 #right{text-align:right;}
 #redtext{
     color:#c22e3a;
+}
+#charitychoicechosen{
+    display:none;
 }

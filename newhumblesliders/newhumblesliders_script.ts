@@ -4,6 +4,9 @@ let split3 = document.getElementById('split3');
 let myRange1 = <HTMLInputElement>document.getElementById('myRange1');
 let myRange2 = <HTMLInputElement>document.getElementById('myRange2');
 let myRange3 = <HTMLInputElement>document.getElementById('myRange3');
+let defaultchoicechosen = document.getElementById('defaultchoicechosen');
+let charitychoicechosen = document.getElementById('charitychoicechosen');
+
 
 var slider1 = parseFloat(myRange1.value);
 var slider2 = parseFloat(myRange2.value);
@@ -100,23 +103,11 @@ function onInput3(){
     split2.innerHTML = myRange2.value;
     split3.innerHTML = myRange3.value;
 }
-
-// (function(){
-//     function update(){
-//         var slider1 = parseFloat(myRange1.value);
-//         var slider2 = parseFloat(myRange2.value);
-//         var slider3 = parseFloat(myRange3.value);
-//         slider1 = totalvalue - slider2 - slider3;
-//         slider2 = totalvalue - slider1 - slider3;
-//         slider3 = totalvalue - slider2 - slider1;
-//         slider1 = totalvalue - slider2 - slider3;
-//         myRange1.value = slider1.toString();
-//         myRange2.value = slider2.toString();
-//         myRange3.value = slider3.toString();
-//         split1.innerHTML = myRange1.value;
-//         split2.innerHTML = myRange2.value;
-//         split3.innerHTML = myRange3.value;
-//     }
-
-//     setInterval(update, 1000/15);
-// })();
+function defaultChoice(){
+    charitychoicechosen.style.display ="none";
+    defaultchoicechosen.style.display ="block";
+}
+function charityChoice(){
+    charitychoicechosen.style.display ="block";
+    defaultchoicechosen.style.display ="none";
+}
