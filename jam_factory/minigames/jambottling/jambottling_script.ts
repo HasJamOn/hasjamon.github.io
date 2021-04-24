@@ -55,16 +55,16 @@ function getRndInteger(min, max) {
 
             bottlefillamount++ ;
             console.log(bottlefillamount);
-            if(bottlefillamount < 10){
+            if(bottlefillamount < 5){
                 bottle.src = "../../art_assets/jamfactory_mockup/jamfactory_assets_mockup/jamfactory_assets_mockup_emptybottle.png";
             }
-            else if(bottlefillamount < 30){
+            else if(bottlefillamount < 15){
                 bottle.src = "../../art_assets/jamfactory_mockup/jamfactory_assets_mockup/jamfactory_assets_mockup_filledbottle1.png";
             }
-            else if(bottlefillamount < 50){
+            else if(bottlefillamount < 35){
                 bottle.src = "../../art_assets/jamfactory_mockup/jamfactory_assets_mockup/jamfactory_assets_mockup_filledbottle2.png";
             }
-            else if(bottlefillamount < 70){
+            else if(bottlefillamount < 60){
                 bottle.src = "../../art_assets/jamfactory_mockup/jamfactory_assets_mockup/jamfactory_assets_mockup_filledbottle3.png";
             }
             else if(bottlefillamount < 90){

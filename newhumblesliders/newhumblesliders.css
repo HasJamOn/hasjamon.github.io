@@ -1,0 +1,22 @@
+body{
+    background-color:#e3e7ed;
+    color:#4c5051;
+    font-family:verdana;
+    display:flex; flex-flow:column nowrap;
+}
+.containerrow{display:flex; flex-flow:row nowrap}
+.slider{
+    opacity: 1;
+}
+.amount{
+    background-color: #879f42;
+    border-radius:2em;
+    height:2em;
+    width:9em;
+    text-align:center;
+}
+#center{margin: 0 10em}
+#right{text-align:right;}
+#redtext{
+    color:#c22e3a;
+}
