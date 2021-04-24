@@ -4,7 +4,7 @@ body{
     font-family:verdana;
     display:flex; flex-flow:column nowrap;
 }
-h1{margin-left:2em;}
+h1{margin-left:8em;}
 .containerrow{display:flex; flex-flow:row nowrap}
 .slider{
     width:30em;
