@@ -6,9 +6,9 @@
     <body>
         <div id="center">
             <p>Choose where your money goes</p>
-            <div class="containerrow"><p>Publishers</p><input type="range" min="1" max="100" value="33" class="slider" id="myRange1"><div class="amount" id="split1"></div></div>
-            <div class="containerrow"><p><u>Charity</u></p><input type="range" min="1" max="100" value="33" class="slider" id="myRange2"><div class="amount" id="split2"></div></div>
-            <div class="containerrow"><p>Humble Tip</p><input type="range" min="1" max="100" value="33" class="slider" id="myRange3"><div class="amount" id="split3"></div></div>
+            <div class="containerrow"><p>Publishers</p><input oninput="onInput1()" type="range" min="0" max="100" value="34" class="slider" id="myRange1"><div class="amount"><span id="split1">34</span>%</div></div>
+            <div class="containerrow"><p><u>Charity</u></p><input oninput="onInput2()" type="range" min="0" max="100" value="33" class="slider" id="myRange2"><div class="amount"><span id="split2">33</span>%</div></div>
+            <div class="containerrow"><p>Humble Tip</p><input oninput="onInput3()" type="range" min="0" max="100" value="33" class="slider" id="myRange3"><div class="amount"><span id="split3">33</span>%</div></div>
             <div id="right">
                 <p id="redtext">Amount cannot be greater than total amount</p>
                 <p>Charitable contributions administered <u>by PayPal Giving Fund</u></p>
