@@ -34,6 +34,8 @@ h1{margin-left:8em;}
     text-align:center;
     color:white;
     font-weight:bold;
+    padding-top:10px;
+    padding-bottom:-10px;
 }
 #center{margin: 0 20em}
 #right{text-align:right;}
