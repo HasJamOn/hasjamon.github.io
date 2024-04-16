@@ -1,2 +1,6 @@
 
 *.psd
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/hasjamon.github.io.iml
